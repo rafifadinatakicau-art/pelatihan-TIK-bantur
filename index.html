@@ -1,0 +1,34 @@
+<!DOCTYPE1 html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cafe Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>☕ KAFE KITA</h1>
+    <p>Pilih menu favoritmu dengan mudah!</p>
+  </header>
+
+  <!-- Kontrol: Pencarian & Filter -->
+  <main class="container">
+    <input type="text" id="searchInput" placeholder="🔍 Cari menu..." onkeyup="filterMenu()">
+
+    <div class="category-buttons">
+      <button class="btn active" onclick="filterCategory('semua', this)">Semua</button>
+      <button class="btn" onclick="filterCategory('makanan', this)">Makanan</button>
+      <button class="btn" onclick="filterCategory('minuman', this)">Minuman</button>
+      <button class="btn" onclick="filterCategory('snack', this)">Snack</button>
+    </div>
+
+    <!-- Daftar Menu -->
+    <div id="menuContainer" class="menu-grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>9
